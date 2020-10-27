@@ -29,8 +29,8 @@ color:white;}
      }
      
      function DEL(){
-     var prevalue = myform.display.value;
-     myform.display.value = prevalue.substr(0,prevalue.length-1); }
+     var prevalue = myform.answer.value;
+     myform.answer.value = prevalue.substr(0,prevalue.length-1); }
      </script>
 <center>
 <form  name="form">
@@ -38,7 +38,7 @@ color:white;}
 <input type="text" name="answer" id="answer" /><br/><br/>
      
 <input type="button" value="Clr" onclick="form.answer.value = ''" >
-<input type="button" value="AC" onclick="myform.display.value="0" ">
+<input type="button" value="AC" onclick="myform.answer.value='0' ">
 <input type="button" value="DEL" onclick="DEL() "><br/><br/>
      
 <input type="button" value=" 1 " onclick="form.answer.value += '1' ">
