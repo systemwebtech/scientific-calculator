@@ -61,14 +61,14 @@ color:white;}
      
      
 
-<input type="button" value=" ^ " onclick="form.answer.value += '1' ">
+<input type="button" value=" ^ " onclick="form.answer.value=Math.pow(form.answer.value,form.answer.value) ">
 <input type="button" value=" √ " onclick="form.answer.value += '1' ">
 <input type="button" value=" ∏ " onclick="form.answer.value += '2' "><br/><br/>
 
      
- <input type="button" value=" ℮ " onclick="form.answer.value += '3' ">    
-<input type="button" value=" log " onclick="form.answer.value += '2' ">
-<input type="button" value=" ln" onclick="form.answer.value += '3' "><br/><br/>
+ <input type="button" value=" ℮ " onclick="form.answer.value="">    
+<input type="button" value=" log " onclick="form.answer.value= Math.log(form.answer.value)>
+<input type="button" value=" ln" onclick="form.answer.value = Math.E "><br/><br/>
      
  <input type="button" value=" MOD " onclick="form.answer.value += '%' ">
 <input type="button" value=" ( " onclick="form.answer.value += '(' ">
