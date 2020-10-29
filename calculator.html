@@ -11,7 +11,7 @@ body{margin:55px;}
 form { border:1px solid black;
      width:355px;}
 
-     @MEDIA (MIN-WIDTH:600px) {form{width:700px;} .answer{width:700px;} .box1{float:left; position:relative; } }  
+     @MEDIA (MIN-WIDTH:600px) {form{width:700px;} .answer{width:700px;} .box1{float:left;} .box2{float:left; position:relative; } }  
 .answer{width:355px;}
 
 input{font-size:2rem;
@@ -32,7 +32,7 @@ color:white;}
      </script>
 <center>
 <form  name="form">
-
+<div class="box1">  
 <input type="text" name="answer" class="answer" /><br/><br/>
      
 <input type="button" value="Clr" onclick="form.answer.value = ''" >
@@ -58,7 +58,8 @@ color:white;}
 <input type="button" value=" / " onclick="form.answer.value += '/' ">
 <input type="button" value=" 0 " onclick="form.answer.value += '0' ">
 <input type="button" value=" = " onclick="form.answer.value = eval(form.answer.value) "><br/><br/>
-<div class="box1">     
+     </div>
+     <div class="box2">     
    <input type="button" value=" . " onclick="form.answer.value=Math.decimal(form.answer.value)">    
 <input type="button" value=" x2 " onclick="form.answer.value=Math.sqr(form.answer.value,2)">
 <input type="button" value=" ln" onclick="form.answer.value=Math.E"><br/><br/>   
