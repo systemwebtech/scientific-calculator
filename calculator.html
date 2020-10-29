@@ -11,8 +11,8 @@ body{margin:55px;}
 form { border:1px solid black;
      width:355px;}
 
-     @MEDIA (MIN-WIDTH:600px) {form{width:700px;} .box1{float:left; position:relative;}}  
-#answer{width:355px;}
+     @MEDIA (MIN-WIDTH:600px) {form{width:700px;} .box1{float:left; } .answer{width:700px;}}  
+.answer{width:355px;}
 
 input{font-size:2rem;
 width:100px;
@@ -33,7 +33,7 @@ color:white;}
 <center>
 <form  name="form">
 
-<input type="text" name="answer" id="answer" /><br/><br/>
+<input type="text" name="answer" class="answer" /><br/><br/>
      
 <input type="button" value="Clr" onclick="form.answer.value = ''" >
 <input type="button" value="AC" onclick="form.answer.value='0'">
