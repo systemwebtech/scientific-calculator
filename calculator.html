@@ -11,7 +11,7 @@ body{margin:55px;}
 form { border:1px solid black;
      width:355px;}
 
-   /*  @MEDIA (MIN-WIDTH:600px) {form{width:0px;} input{float:0;}} */ 
+     @MEDIA (MIN-WIDTH:600px) {form{width:700px;} .box1{float:left;}}  
 #answer{width:355px;}
 
 input{font-size:2rem;
@@ -58,7 +58,7 @@ color:white;}
 <input type="button" value=" / " onclick="form.answer.value += '/' ">
 <input type="button" value=" 0 " onclick="form.answer.value += '0' ">
 <input type="button" value=" = " onclick="form.answer.value = eval(form.answer.value) "><br/><br/>
-     
+<div class="box1">     
    <input type="button" value=" . " onclick="form.answer.value=Math.decimal(form.answer.value)">    
 <input type="button" value=" x2 " onclick="form.answer.value=Math.sqr(form.answer.value,2)">
 <input type="button" value=" ln" onclick="form.answer.value=Math.E"><br/><br/>   
@@ -83,7 +83,7 @@ color:white;}
 <input type="button" value=" sin " onclick="form.answer.value = Math.sin(form.answer.value) ">
 <input type="button" value=" cos " onclick="form.answer.value = Math.cos(form.answer.value) ">
 <input type="button" value=" tan " onclick="form.answer.value=Math.tan(form.answer.value) "><br/><br/>
-
+</div>
 
 
 </form>
