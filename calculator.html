@@ -13,7 +13,7 @@ form {
 .answer{width:355px;}
      
      @MEDIA (MIN-WIDTH:260px) {form{width:700px;} .answer{width:621px; float:left;} .box1{float:left;} .box2{float:left;  position:relative; } }  
-
+     .text{color:red; font-size:5px;}
 
 input{font-size:2rem;
 width:100px;
@@ -92,10 +92,10 @@ color:white;}
      <input type="button" value="ABS " onclick="form.answer.value = Math.abs(form.answer.value) ">
      <input type="button" value="(-)" onclick="form.answer.value += 'M+' "><br/><br/>
           
-<input type="text" value=" sin1 " onclick="form.answer.value = Math.sin(form.answer.value) ">
+<input class="text" type="text" value=" sin1 " onclick="form.answer.value = Math.sin(form.answer.value) ">
 <input type="button" value=" sin " onclick="form.answer.value = Math.sin(form.answer.value) ">
           <input type="button" value=" cos " onclick="form.answer.value = Math.cos(form.answer.value) ">
-<input type="text" value=" cos1 " onclick="form.answer.value = Math.cos(form.answer.value) ">
+<input class="text" type="text" value=" cos1 " onclick="form.answer.value = Math.cos(form.answer.value) ">
 <input type="button" value=" tan " onclick="form.answer.value=Math.tan(form.answer.value) "><br/><br/>
 </div>
 
