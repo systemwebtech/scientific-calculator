@@ -26,7 +26,14 @@ color:white;}
 
 <body>
      <script>
-   
+   function isKeyPressed(event) {
+  var x = document.getElementById("demo");
+   if (event.shiftKey) {
+    x.innerHTML = "The SHIFT key was pressed!";
+  } else {
+    x.innerHTML = "The SHIFT key was NOT pressed!";
+  }
+   }
      
      function DEL(){
      var prevalue = form.answer.value;
@@ -65,7 +72,7 @@ color:white;}
      <div class="box2"> 
  <input type="button" value=" . " onclick="form.answer.value+= '.'"> 
 <input type="button" value=" SQR " onclick="form.answer.value=Math.pow(form.answer.value,2)"> 
-<input type="button" value="SHIFT" onclick="form.answer.value=Math.E"><br/><br/> 
+<input type="button" value="SHIFT" onkeydown="isKeyPressed(event)" id="demo"  onclick="form.answer.value=Math.E"><br/><br/> 
   
 
 <input type="button" value=" ^ " onclick="form.answer.value=Math.pow(form.answer.value,form.answer.value) ">
