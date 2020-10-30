@@ -13,7 +13,7 @@ form {
 .answer{width:355px;}
      
      @MEDIA (MIN-WIDTH:260px) {form{width:700px;} .answer{width:621px; float:left;} .box1{float:left;} .box2{float:left;  position:relative; } }  
-   /* label{color:red; font-size:15px; background-color:white; } */
+   label{color:red; font-size:15px; background-color:white; } 
 
 input{font-size:2rem;
 width:100px;
@@ -92,13 +92,13 @@ color:white;}
      <input type="button" value="ABS " onclick="form.answer.value = Math.abs(form.answer.value) ">
      <input type="button" value="(-)" onclick="form.answer.value += 'M+' "><br/><br/>
           
- <! --<label  value=" sin1 " onclick="form.answer.value = Math.sin(form.answer.value) ">sin-1<br/> </label> -->
+ <label  value=" sin1 " onclick="form.answer.value = Math.asin(form.answer.value) ">sin-1<br/> </label> 
 <input type="button" value=" sin " onclick="form.answer.value = Math.sin(form.answer.value) ">
           
-          <! -- <label  value=" cos1 " onclick="form.answer.value = Math.cos(form.answer.value) ">cos-1<br/> </label> -->
+          <label  value=" cos1 " onclick="form.answer.value = Math.acos(form.answer.value) ">cos-1<br/> </label> 
           <input type="button" value=" cos " onclick="form.answer.value = Math.cos(form.answer.value) ">
           
- <! -- <label  value=" cos1 " onclick="form.answer.value = Math.tan(form.answer.value) ">tan-1<br/> </label> -->
+ <label  value=" cos1 " onclick="form.answer.value = Math.atan(form.answer.value) ">tan-1<br/> </label> 
 <input type="button" value=" tan " onclick="form.answer.value=Math.tan(form.answer.value) "><br/><br/>
 </div>
 
